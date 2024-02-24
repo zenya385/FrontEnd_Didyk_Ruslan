@@ -18,6 +18,19 @@ a {
   color: currentColor;
 }
 
+html {
+  font-size: 20px;
+}
+p {
+  font-size: 0.8rem; /* = 16px */
+}
+p span {
+  font-size: 2em; /* = 16px * 2 = 32px */
+}
+p strong {
+  font-size: 2rem; /* = 20px * 2 = 40px */
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -71,42 +84,27 @@ a {
 } */
 
 /* ================================================== */
+/* calc((100% - кіль-сть_відступів_в_рядку * значення_одного_рядка) / кіль-сть_елементів_в_рядку) */
 
 .card {
-  /* max-width: 900px; */
-  /* margin: 0 auto; */
 }
 .card-list {
   display: flex;
-  /* justify-content: space-between; */
-  gap: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
 }
 .card-item {
   border: 1px solid #000;
-  flex-basis: 170px;
   padding-bottom: 15px;
+
+  flex-basis: calc((100% - 6 * 30px) / 6);
 }
 
-.card-item:nth-child(1) {
-  flex-shrink: 1;
-  flex-grow: 1;
-}
-.card-item:nth-child(2) {
-  flex-shrink: 1;
-  flex-grow: 2;
-}
-.card-item:nth-child(3) {
-  flex-shrink: 1;
-  flex-grow: 1;
-}
-.card-item:nth-child(4) {
-  flex-shrink: 1;
-  flex-grow: 1;
-}
 .card-img {
   display: block;
   height: auto;
-  max-width: 100%;
+  width: 100%;
   margin-bottom: 10px;
 }
 .card-title {
@@ -116,4 +114,68 @@ a {
 .card-text {
   padding-left: 7px;
   padding-right: 7px;
+}
+
+/* =================== holder ===================== */
+
+.holder {
+  /* position: relative;
+  display: grid;
+  grid-template-columns: 50% auto;
+  grid-template-rows: 50% auto 50%;
+  grid-gap: 5px; */
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  margin: 50px auto;
+  border: 4px solid #000;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  padding: 15px 0;
+}
+
+.item:nth-child(1) {
+  /* grid-row: 1;
+  grid-column: 1; */
+  border-top-left-radius: 12px;
+  background-color: red;
+  width: 50%;
+  order: 1;
+}
+.item:nth-child(2) {
+  /* grid-row: 1;
+  grid-column: 2; */
+  background-color: rgb(0, 94, 255);
+  order: 4;
+  width: 33.3%;
+}
+.item:nth-child(3) {
+  /* grid-row: 3;
+  grid-column: 1; */
+  background-color: purple;
+  order: 3;
+  width: 33.3%;
+}
+.item:nth-child(4) {
+  /* grid-row: 2;
+  grid-column: 1; */
+  background-color: rgb(89, 255, 0);
+  order: 5;
+  width: 33.3%;
+}
+.item:nth-child(5) {
+  /* grid-row: 3;
+  grid-column: 2; */
+  border-top-right-radius: 12px;
+
+  background-color: rgb(242, 171, 4);
+  order: 2;
+  width: 50%;
 }
