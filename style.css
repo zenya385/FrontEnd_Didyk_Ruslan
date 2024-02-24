@@ -18,164 +18,39 @@ a {
   color: currentColor;
 }
 
-html {
-  font-size: 20px;
-}
-p {
-  font-size: 0.8rem; /* = 16px */
-}
-p span {
-  font-size: 2em; /* = 16px * 2 = 32px */
-}
-p strong {
-  font-size: 2rem; /* = 20px * 2 = 40px */
+body {
+  background-color: #1dc1ea;
+  background-image: url(img/3135715.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50px;
 }
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border: 1px solid #000;
-  background-color: #bce7f0;
-  padding: 25px 15px;
-}
-
-.logo {
-  color: #000;
-  font-family: Raleway;
+.text {
   font-size: 26px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 0.78px;
-}
-
-.web {
-  color: #2196f3;
-}
-
-.nav-list-1 {
-  display: flex;
-  /* justify-content: space-between; */
-  column-gap: 21px;
-  row-gap: 20px;
-  flex-wrap: wrap;
-}
-
-.item-1 {
-  color: #000;
-  font-family: Raleway;
-  font-size: 20px;
-  font-weight: normal;
-  line-height: normal;
-  letter-spacing: 0.78px;
-}
-
-.item-1:hover {
-  color: #2196f3;
-}
-
-/* .item-1:last-child {
-  margin-right: 0;
-} */
-
-/* .item-1:not(:last-child) {
-  margin-right: 20px;
-} */
-
-/* ================================================== */
-/* calc((100% - кіль-сть_відступів_в_рядку * значення_одного_рядка) / кіль-сть_елементів_в_рядку) */
-
-.card {
-}
-.card-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-}
-.card-item {
-  border: 1px solid #000;
-  padding-bottom: 15px;
-
-  flex-basis: calc((100% - 6 * 30px) / 6);
-}
-
-.card-img {
-  display: block;
-  height: auto;
-  width: 100%;
-  margin-bottom: 10px;
-}
-.card-title {
-  margin-bottom: 8px;
   text-align: center;
-}
-.card-text {
-  padding-left: 7px;
-  padding-right: 7px;
+  margin-top: 50px;
 }
 
-/* =================== holder ===================== */
-
-.holder {
-  /* position: relative;
-  display: grid;
-  grid-template-columns: 50% auto;
-  grid-template-rows: 50% auto 50%;
-  grid-gap: 5px; */
-  display: flex;
-  flex-wrap: wrap;
-  width: 50%;
-  margin: 50px auto;
-  border: 4px solid #000;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
+.text::before {
+  /* content: "\1F41C"; */
+  /* content: "🐍"; */
+  /* content: " "; */
+  /* 
+  display: block;
+  width: 35px;
+  height: 35px; */
+  /* background-image: url(img/3135715.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat; */
 }
 
-.item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 24px;
-  padding: 15px 0;
+.text::first-line {
+  font-size: 40px;
+  color: red;
 }
 
-.item:nth-child(1) {
-  /* grid-row: 1;
-  grid-column: 1; */
-  border-top-left-radius: 12px;
-  background-color: red;
-  width: 50%;
-  order: 1;
-}
-.item:nth-child(2) {
-  /* grid-row: 1;
-  grid-column: 2; */
-  background-color: rgb(0, 94, 255);
-  order: 4;
-  width: 33.3%;
-}
-.item:nth-child(3) {
-  /* grid-row: 3;
-  grid-column: 1; */
-  background-color: purple;
-  order: 3;
-  width: 33.3%;
-}
-.item:nth-child(4) {
-  /* grid-row: 2;
-  grid-column: 1; */
-  background-color: rgb(89, 255, 0);
-  order: 5;
-  width: 33.3%;
-}
-.item:nth-child(5) {
-  /* grid-row: 3;
-  grid-column: 2; */
-  border-top-right-radius: 12px;
-
-  background-color: rgb(242, 171, 4);
-  order: 2;
-  width: 50%;
+.text::selection {
+  background-color: aqua;
 }
