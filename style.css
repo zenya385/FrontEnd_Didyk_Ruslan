@@ -21,14 +21,24 @@ a {
 html {
   font-size: 20px;
 }
+.box{
+  background-color: red;
+  /* height: 10px; */
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: 26px;
+  color: rgb(0, 0, 0);
+}
 p {
   font-size: 0.8rem; /* = 16px */
 }
 p span {
   font-size: 2em; /* = 16px * 2 = 32px */
+  color: rgba(0, 0, 0, 0.5);
 }
 p strong {
   font-size: 2rem; /* = 20px * 2 = 40px */
+  opacity: 0.5;
 }
 
 .header {
