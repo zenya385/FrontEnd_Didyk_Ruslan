@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-* {
+*,html {
   margin: 0;
   padding: 0;
 }
@@ -19,38 +19,29 @@ a {
 }
 
 body {
-  background-color: #1dc1ea;
-  background-image: url(img/3135715.png);
+
+}
+
+
+
+.background{
+  width:90%;
+  height: 90vh;
+  margin: 0 auto;
+  background-color: #1ad899;
+  background-image: url(img/apple-icon.png), url(img/3135715.png), url(img/bg-img.jpg);
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: 50px;
+  background-position: 100px 200px, -100px -200px, center ;
+  background-size:100px, 200px,  contain;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .text {
   font-size: 26px;
   text-align: center;
-  margin-top: 50px;
-}
-
-.text::before {
-  /* content: "\1F41C"; */
-  /* content: "🐍"; */
-  /* content: " "; */
-  /* 
-  display: block;
-  width: 35px;
-  height: 35px; */
-  /* background-image: url(img/3135715.png);
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat; */
-}
-
-.text::first-line {
-  font-size: 40px;
-  color: red;
-}
-
-.text::selection {
-  background-color: aqua;
+  color: bisque;
+  /* margin-top: 50px; */
 }
