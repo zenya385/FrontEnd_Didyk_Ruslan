@@ -29,10 +29,16 @@ body {
   height: 90vh;
   margin: 0 auto;
   background-color: #1ad899;
-  background-image: url(img/apple-icon.png), url(img/3135715.png), url(img/bg-img.jpg);
+  /* background-image:  url(img/apple-icon.png), url(img/3135715.png), url(img/bg-img.jpg); */
+  /* background-image:  linear-gradient(rgba(47, 48, 58, 0.40),rgba(47, 48, 58, 0.40)), url(img/bg-img.jpg); */
+  background-image:   url(img/bg-img.jpg);
+  background: rgb(184,179,179);
+background: linear-gradient(346deg, rgba(184,179,179,0.5371148459383753) 10%, rgba(186,177,125,0.4950980392156863) 24%, rgba(114,113,108,0.4278711484593838) 38%, rgba(184,182,171,0.3494397759103641) 49%, rgba(216,214,199,0.46148459383753504) 54%, rgba(17,218,200,0.6491596638655462) 69%, rgba(85,228,131,0.5903361344537815) 85%, rgba(204,34,218,0.4950980392156863) 100%), url(img/bg-img.jpg);
   background-repeat: no-repeat;
-  background-position: 100px 200px, -100px -200px, center ;
-  background-size:100px, 200px,  contain;
+  /* background-position:  100px 200px, -100px -200px, center ; */
+  background-position: center;
+  /* background-size:  100px, 200px,  contain; */
+  background-size: contain;
 
   display: flex;
   justify-content: center;
