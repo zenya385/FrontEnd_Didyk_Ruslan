@@ -2,7 +2,8 @@ body {
   font-family: Roboto;
   line-height: normal;
   width: 100vw;
-  background-color: rgba(30, 37, 43, 1);
+  /* background-color: rgba(30, 37, 43, 1); */
+  background-color: #fff;
   height: 100vh;
 }
 * {
@@ -36,7 +37,8 @@ a {
 
 .splide__slide{
   min-height: 600px ;
-  background-color: rgba(30, 37, 43, 1);
+  /* background-color: rgba(30, 37, 43, 1); */
+  background-color: #fff;
 }
 
 .splide__arrow {
